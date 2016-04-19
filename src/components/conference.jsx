@@ -13,6 +13,18 @@ let Conference = React.createClass({
     });
   },
 
+  _getDetail: (detail, show) => {
+    if (show) {
+      return (
+        <p className='otherThings-category-list-item-detail'>
+          { detail }
+        </p>
+      )
+    }
+
+    return null;
+  },
+
   render: function() {
     let { conference, title, date, detail, links, eventModifier } = this.props;
     let wrapperClass = 'otherThings-category-list-item ' + eventModifier;
@@ -28,9 +40,7 @@ let Conference = React.createClass({
         <time className='otherThings-category-list-item-date'>
           { date }
         </time>
-        <p className='otherThings-category-list-item-detail'>
-          { detail }
-        </p>
+        { this._getDetail(detail, eventModifier !== 'pastEvent') }
         { this._getLinks(links) }
       </li>)
   },
