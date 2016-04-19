@@ -26,9 +26,6 @@ module.exports = function(shipit) {
       shared: {
         files: [
           '.env.json',
-          {
-            path: './shared/.env.json',
-          },
         ],
       },
     },
