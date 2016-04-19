@@ -41,9 +41,7 @@ function getData(type, renderData) {
 
 // 🔑
 app.get('/%F0%9F%94%91', function(req, res) {
-  res.render('./src/key', {
-    ga: process.env.GA,
-  });
+  res.render('./src/gpg-key');
 });
 
 app.get('/', function(req, res) {
