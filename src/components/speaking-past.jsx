@@ -5,27 +5,23 @@ let Conference = require('./conference');
 let _ = require('lodash');
 
 let SpeakingPast = React.createClass({
-  displayName: 'SpeakingReact',
+  displayName: 'SpeakingPastReact',
 
-  _convertDate: (date) => {
-    // Let day = date.match(/([a-zA-Z]*) (\d*)-*(\d*), (.*)/);
-    // return new Date(day[1] + ' ' + day[2] + ', ' + day[4]);
-    return date;
-  },
-
-  _getConferences: function(conferences) {
+  _getConferences: (conferences) => {
     conferences = _.filter(conferences, (conference) => {
-      return this._convertDate(conference.date) < Date.now();
+      let day = conference.date.match(/([a-zA-Z]*) (\d*)-*(\d*), (.*)/);
+      let theDate = day[1] + ' ' + day[2] + ', ' + day[4];
+
+      return new Date(theDate) < Date.now();
     });
 
     return _.map(conferences, (conference) => {
-      // Console.log('....', this._convertDate(conference.date));
       return <Conference
         conference={conference.conference}
         title={conference.title}
+        detail={conference.detail}
         date={conference.date}
         links={conference.links}
-        eventModifier='pastEvent'
       />
     });
   },

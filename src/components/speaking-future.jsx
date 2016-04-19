@@ -5,11 +5,10 @@ let Conference = require('./conference');
 let _ = require('lodash');
 
 let SpeakingFuture = React.createClass({
-  displayName: 'SpeakingReact',
+  displayName: 'SpeakingFutureReact',
 
   _getConferences: (conferences) => {
     conferences = _.filter(conferences, (conference) => {
-      return true;
       let day = conference.date.match(/([a-zA-Z]*) (\d*)-*(\d*), (.*)/);
       let theDate = day[1] + ' ' + day[2] + ', ' + day[4];
 
