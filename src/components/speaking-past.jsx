@@ -5,7 +5,7 @@ let Conference = require('./conference');
 let _ = require('lodash');
 
 let SpeakingPast = React.createClass({
-  displayName: 'SpeakingPastReact',
+  displayName: 'SpeakingReact',
 
   _getConferences: (conferences) => {
     conferences = _.filter(conferences, (conference) => {
@@ -22,6 +22,7 @@ let SpeakingPast = React.createClass({
         detail={conference.detail}
         date={conference.date}
         links={conference.links}
+        eventModifier='pastEvent'
       />
     });
   },
