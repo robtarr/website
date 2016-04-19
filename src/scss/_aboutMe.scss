@@ -1,0 +1,38 @@
+$bp-picture-on-side: 52em;
+
+.aboutMe {
+  overflow: hidden;
+  clear: left;
+}
+
+.aboutMe-pic {
+  border-radius: 9999px;
+  border: 16px solid $c-aboutMe-pic-border;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 332px;
+
+  @include sb-media($bp-picture-on-side) {
+    float: right;
+    width: 34%;
+  }
+}
+
+.aboutMe-wrapper {
+  @include sb-media($bp-picture-on-side) {
+    float: left;
+    width: 60%;
+  }
+}
+
+.aboutMe-title {
+  @include rem(font-size, 2.5);
+  line-height: 1.1;
+  font-family: "Prelo Slab W01 Bold";
+  text-align: center;
+
+  @include sb-media($bp-picture-on-side) {
+    text-align: left;
+  }
+}

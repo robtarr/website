@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'DroidSans';
+  src: url('/fonts/Droid-Sans/DroidSans-webfont.eot');
+  src: url('/fonts/Droid-Sans/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Droid-Sans/DroidSans-webfont.woff') format('woff'),
+       url('/fonts/Droid-Sans/DroidSans-webfont.ttf') format('truetype'),
+       url('/fonts/Droid-Sans/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DroidSans';
+  src: url('/fonts/Droid-Sans/DroidSans-Bold-webfont.eot');
+  src: url('/fonts/Droid-Sans/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Droid-Sans/DroidSans-Bold-webfont.woff') format('woff'),
+       url('/fonts/Droid-Sans/DroidSans-Bold-webfont.ttf') format('truetype'),
+       url('/fonts/Droid-Sans/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=f1769b96-f801-42ba-a089-f2153797bfa7");
+@font-face {
+font-family: "Prelo Slab W01 Bold";
+src: url('/fonts/prelo.eot?#iefix');
+src: url('/fonts/prelo.eot?#iefix') format("eot"),
+     url('/fonts/prelo.woff') format("woff"),
+     url('/fonts/prelo.ttf') format("truetype"),
+     url('/fonts/prelo.svg#prelo') format("svg");
+}

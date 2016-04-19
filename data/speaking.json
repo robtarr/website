@@ -1,0 +1,165 @@
+[
+  {
+    "conference": "The Path to Agility",
+    "title": "Break up with Your Build Tools",
+    "date": "May 26, 2016",
+    "links": [
+      {
+        "href": "http://www.thepathtoagility.com/",
+        "text": "thepathtoagility.com"
+      }
+    ]
+  },
+  {
+    "conference": "Beyond the Desktop - Nashville",
+    "title": "Build Right: Frontend Testing",
+    "date": "June 8, 2015",
+    "links": [
+      {
+        "href": "//bdconf.com/",
+        "text": "BDConf.com"
+      }
+    ]
+  },
+  {
+    "conference": "Frontend Design Conf - St. Pete",
+    "title": "Build Right: Frontend Testing",
+    "date": "May 20, 2015",
+    "links": [
+      {
+        "href": "//frontenddesignconference.com/",
+        "text": "FrontendDesingConf.com"
+      }
+    ]
+  },
+  {
+    "conference": "ConvergeSE",
+    "title": "Build Right: Frontend Testing",
+    "date": "April 15-18, 2015",
+    "detail": "ConvergeSE takes place in beautiful springtime in Columbia, South Carolina. Over the course of three days you can dive into intense half and full day sessions, hop from venue to venue downtown taking in sessions on topics from design and development to business and marketing, and finally experience a full day of inspirational talks from an impressive array of speakers. In between all of that, we’ll give you plenty of opportunities to eat, drink and party with the speakers and other attendees.",
+    "links": [
+      {
+        "href": "//convergese.com",
+        "text": "ConvergeSE.com"
+      }
+    ]
+  },
+  {
+    "conference": "SXSW",
+    "title": "Build Right: Frontend Testing",
+    "date": "March 14, 2015",
+    "detail": "The South by Southwest® (SXSW®) Conferences & Festivals offer the unique convergence of original music, independent films, and emerging technologies. Fostering creative and professional growth alike, SXSW® is the premier destination for discovery.",
+    "links": [
+      {
+        "href": "//schedule.sxsw.com/2015/events/event_IAP34240",
+        "text": "sxsw.com"
+      }
+    ]
+  },
+  {
+    "conference": "Codemash",
+    "title": "Build Right: Frontend Testing",
+    "date": "January 6-9, 2015",
+    "detail": "CodeMash is a unique event that will educate developers on current practices, methodologies, and technology trends in a variety of platforms and development languages such as Java, .Net, Ruby, Python and PHP.",
+    "links": [
+      {
+        "href": "//codemash.org",
+        "text": "Codemash.org"
+      },
+      {
+        "href": "//https://speakerdeck.com/robtarr/development-tools-and-responsive-javascript",
+        "text": "Slides"
+      }
+    ]
+  },
+  {
+    "conference": "Frontend Tooling Workshop",
+    "title": "Frontend Design Conf - St. Petersburg, FL",
+    "date": "July 10-12, 2014",
+    "detail": ""
+  },
+  {
+    "conference": "SXSW",
+    "title": "Blur The Lines: Write Web Apps That Look Native",
+    "date": "March 7-11, 2014",
+    "detail": "The South by Southwest® (SXSW®) Conferences & Festivals offer the unique convergence of original music, independent films, and emerging technologies. Fostering creative and professional growth alike, SXSW® is the premier destination for discovery.",
+    "links": [
+      {
+        "href": "//panelpicker.sxsw.com/vote/23253",
+        "text": "sxsw.com"
+      }
+    ]
+  },
+  {
+    "conference": "Code PaLOUsa",
+    "title": "Blur The Lines: Write Web Apps That Look Native",
+    "date": "February 24-26, 2014",
+    "detail": "Fourth annual Code PaLOUsa in Louisvlle, KY.",
+    "links": [
+      {
+        "href": "//codepalousa.com",
+        "text": "codepaLOUsa.com"
+      }
+    ]
+  },
+  {
+    "conference": "ConvergeSE",
+    "date": "April 25-27, 2013",
+    "detail": "ConvergeSE takes place in beautiful springtime in Columbia, South Carolina. Over the course of three days you can dive into intense half and full day sessions, hop from venue to venue downtown taking in sessions on topics from design and development to business and marketing, and finally experience a full day of inspirational talks from an impressive array of speakers. In between all of that, we’ll give you plenty of opportunities to eat, drink and party with the speakers and other attendees.",
+    "links": [
+      {
+        "href": "//convergese.com",
+        "text": "ConvergeSE.com"
+      },
+      {
+        "href": "//speakerdeck.com/robtarr/responsive-javascript",
+        "text": "Slides"
+      },
+      {
+        "href": "//gist.github.com/robtarr/5479468",
+        "text": "Notes"
+      }
+    ]
+  },
+  {
+    "conference": "Codemash",
+    "date": "January 8-11, 2013",
+    "detail": "CodeMash is a unique event that will educate developers on current practices, methodologies, and technology trends in a variety of platforms and development languages such as Java, .Net, Ruby, Python and PHP.",
+    "links": [
+      {
+        "href": "//codemash.org",
+        "text": "Codemash.org"
+      },
+      {
+        "href": "//https://speakerdeck.com/robtarr/development-tools-and-responsive-javascript",
+        "text": "Slides"
+      }
+    ]
+  },
+  {
+    "conference": "Mobile JS Summit",
+    "date": "November 12, 2012",
+    "detail": "The Mobile web grows eight times faster than the desktop. Smartphone sales will surpass PC sales in 2012. The Mobile Javascript Summit helps you tackle the challenge of creating the Mobile Web. Spend a day sharpening your skills on mobile JavaScript frameworks, mobile design and mobile best practices.",
+    "links": [
+      {
+        "href": "//www.environmentsforhumans.com/2012/mobile-javascript-summit/",
+        "text": "buildresponsively.com"
+      },
+      {
+        "href": "//robtarr.net/decks/mobilejssummit-2012",
+        "text": "Slides"
+      }
+    ]
+  },
+  {
+    "conference": "SXSW",
+    "date": "March 9-13, 2012",
+    "detail": "The South by Southwest® (SXSW®) Conferences & Festivals offer the unique convergence of original music, independent films, and emerging technologies. Fostering creative and professional growth alike, SXSW® is the premier destination for discovery.",
+    "links": [
+      {
+        "href": "//schedule.sxsw.com/2012/events/event_IAP11178",
+        "text": "sxsw.com"
+      }
+    ]
+  }
+]

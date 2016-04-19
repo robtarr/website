@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Leo",
+    "detail": "I'm currently working on a robot vaccuum.",
+    "links": [
+      {
+        "href": "//robtarr.github.io/leo",
+        "text": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "Media Query Bookmarklet",
+    "detail": "The mediaQuery bookmarklet gives a visual representation of the current viewport dimensions and most recently fired media query.",
+    "links": [
+      {
+        "href": "//github.com/sparkbox/mediaQueryBookmarklet",
+        "text": "GitHub"
+      },
+      {
+        "href": "//seesparkbox.com/foundry/media_query_bookmarklet",
+        "text": "Blog Post"
+      }
+    ]
+  },
+  {
+    "title": "mediaCheck",
+    "detail": "This is a simple wrapper around matchMedia to run code on entry and exit from media queries. It also uses browser resize as a fallback for browsers that don't support matchMedia.",
+    "links": [
+      {
+        "href": "//github.com/sparkbox/mediaCheck",
+        "text": "GitHub"
+      },
+      {
+        "href": "//seesparkbox.com/foundry/responsive_web_design_and_javascript",
+        "text": "Blog Post"
+      }
+    ]
+  },
+  {
+    "title": "Gem City JS",
+    "detail": "Gem City JS is a meetup of web developers who share a desire to share and learn more about JavaScript.",
+    "links": [
+      {
+        "href": "//gemcityjs.com",
+        "text": "GemCityJS.com"
+      }
+    ]
+  }
+]

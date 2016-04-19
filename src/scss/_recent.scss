@@ -1,0 +1,76 @@
+.recent {
+  @include site-padding;
+  background: $c-recent;
+  color: $c-recent-text;
+}
+
+.recentList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.recentList-item {
+  padding: 3em 0 0 0;
+  position: relative;
+  text-align: center;
+
+  @include sb-media(45em) {
+    width: 33.3%;
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  a,
+  a:hover,
+  a:visited {
+    color: $c-recent-text;
+  }
+}
+
+.recentList-item-icon {
+  @include rem(font-size, 2.7);
+  color: $c-recent-icon;
+  display: block;
+  margin-bottom: .3em;
+}
+
+.recentList-item-heading {
+  font-family: "Prelo Slab W01 Bold";
+  margin: 0;
+  position: relative;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+
+  &:after {
+    content: "";
+    border-top: 1px solid $c-recent-separator;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+  }
+}
+
+.recentList-item-externalLink {
+  font-family: "DroidSans";
+  font-weight: bold;
+}
+
+.recentList-item-detail {
+  @include rem(font-size, 0.9);
+}
+
+.meta {
+  display: block;
+  margin-top: 1em;
+}

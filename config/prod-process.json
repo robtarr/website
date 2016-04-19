@@ -1,0 +1,21 @@
+{
+  "apps" : [{
+    "name": "robtarr-net",
+    "cwd": "/var/www/html/robtarr-net/current",
+    "script": "app.js",
+    "watch": ["assets/"],
+    "env": {
+      "NODE_ENV": "development",
+      "DOMAIN": "robtarr.net"
+    },
+    "env_production" : {
+      "NODE_ENV": "production",
+      "DOMAIN": "robtarr.net"
+    }
+  }, {
+    "name": "data-fetcher",
+    "cwd": "/var/www/html/robtarr-net/current",
+    "script": "app/robtarr.js",
+    "watch": ["app/"]
+  }]
+}

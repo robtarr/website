@@ -1,0 +1,7 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+Rob Tarr
+Site: https://robtarr.net
+Twitter: robtarr
+Location: Dayton, OH

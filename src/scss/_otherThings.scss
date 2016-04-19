@@ -1,0 +1,116 @@
+$bp-columns-2up: 62em;
+
+.otherThings {
+  @include site-padding;
+  background: $c-otherThings;
+  color: $c-otherThings-text;
+  overflow: hidden;
+
+  a,
+  a:hover,
+  a:visited {
+    color: $c-otherThings-text;
+  }
+}
+
+.otherThings-group {
+  position: relative;
+
+  @include sb-media($bp-columns-2up) {
+    width: 50%;
+    float: left;
+
+    &:first-child {
+      padding-right: 1.5em;
+    }
+    &:last-child {
+      padding-left: 1.5em;
+    }
+  }
+}
+
+.otherThings-category {
+  @include rem(font-size, 2.25);
+  font-family: "Prelo Slab W01 Bold";
+  position: relative;
+  line-height: 2;
+
+  &:after {
+    content: "";
+    border-top: 1px solid $c-otherThings-separator;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &.projects {
+    margin-bottom: .5em;
+  }
+}
+
+
+.otherThings-subCategory {
+  @include rem(font-size, 1.2);
+  color: $c-otherThings-subCategory;
+  font-family: "Prelo Slab W01 Bold";
+  position: relative;
+}
+
+
+.otherThings-category-icon {
+  @include rem(font-size, 2.7);
+  color: $c-otherThings-icon;
+  padding-right: 0.25em;
+  position: relative;
+  top: .2em;
+}
+
+.otherThings-category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.otherThings-category-list-item {
+  margin-bottom: 3em;
+
+  &.pastEvent {
+    margin-bottom: 2em;
+  }
+}
+
+.otherThings-category-list-item-conferenceTitle,
+.otherThings-category-list-item-projectTitle {
+  font-family: "Prelo Slab W01 Bold";
+  margin-bottom: 0;
+}
+
+
+.pastEvent .otherThings-category-list-item-conferenceTitle {
+  @include rem(font-size, 1.2);
+}
+
+.otherThings-category-list-item-presentationTitle {
+  font-family: "DroidSans";
+  @include rem(font-size, 1);
+  margin: 0 0 .4em;
+}
+
+.otherThings-category-list-item-date {
+  display: block;
+  @include rem(font-size, .8);
+  margin-bottom: 1em;
+}
+
+.otherThings-category-list-item-externalLink {
+  border-radius: 3px;
+  background: $c-otherThings-externalLink;
+  padding: 0.5em 1.2em;
+  margin-right: .2em;
+  @include rem(font-size, 0.8);
+  font-family: "Prelo Slab W01 Bold";
+  line-height: 2.6;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+}

@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DroidSans";
+  margin: 0;
+  background: $c-body;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.page-wrapper {
+  position: relative;
+  top: 0;
+  transition: top $nav-trans-duration $nav-trans-ease;
+}

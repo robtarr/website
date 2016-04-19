@@ -1,0 +1,309 @@
+@font-face {
+  font-family: 'DroidSans';
+  src: url("/fonts/Droid-Sans/DroidSans-webfont.eot");
+  src: url("/fonts/Droid-Sans/DroidSans-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Droid-Sans/DroidSans-webfont.woff") format("woff"), url("/fonts/Droid-Sans/DroidSans-webfont.ttf") format("truetype"), url("/fonts/Droid-Sans/DroidSans-webfont.svg#DroidSansRegular") format("svg");
+  font-weight: regular;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DroidSans';
+  src: url("/fonts/Droid-Sans/DroidSans-Bold-webfont.eot");
+  src: url("/fonts/Droid-Sans/DroidSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Droid-Sans/DroidSans-Bold-webfont.woff") format("woff"), url("/fonts/Droid-Sans/DroidSans-Bold-webfont.ttf") format("truetype"), url("/fonts/Droid-Sans/DroidSans-Bold-webfont.svg#DroidSansBold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Prelo Slab W01 Bold";
+  src: url("/fonts/prelo.eot?#iefix");
+  src: url("/fonts/prelo.eot?#iefix") format("eot"), url("/fonts/prelo.woff") format("woff"), url("/fonts/prelo.ttf") format("truetype"), url("/fonts/prelo.svg#prelo") format("svg"); }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("/fonts/icomoon.eot");
+  src: url("/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf") format("truetype"), url("/fonts/icomoon.woff") format("woff"), url("/fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class*="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-writing:before {
+  content: "\e600"; }
+
+.icon-speaking:before {
+  content: "\e601"; }
+
+.icon-projects:before {
+  content: "\e602"; }
+
+.icon-twitter:before {
+  content: "\e604"; }
+
+.icon-github:before {
+  content: "\e603"; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "DroidSans";
+  margin: 0;
+  background: #0d832d; }
+
+p {
+  line-height: 1.4; }
+
+.page-wrapper {
+  position: relative;
+  top: 0;
+  transition: top 0.5s ease-out; }
+
+.header {
+  padding: 2em 5%;
+  background: #868687;
+  color: white;
+  min-height: 10.4em; }
+  @media (min-width: 35em) {
+    .header {
+      padding: 2em 15%; } }
+  .header a,
+  .header a:hover,
+  .header a:visited {
+    color: white; }
+
+.logo {
+  float: left; }
+
+.header-title {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  font-family: "Prelo Slab W01 Bold";
+  line-height: 1.5;
+  margin: 0;
+  padding: 1.2em 0 1.2em 1.2em;
+  float: left; }
+  .no-svg .header-title {
+    background: url("/images/rt.png") no-repeat 0 0;
+    background-size: contain;
+    padding: 1.4em 0 1.4em 6.3em; }
+  @media (min-width: 35em) {
+    .header-title {
+      font-size: 24px;
+      font-size: 1.5rem;
+      padding-left: .7em; }
+      .header-title br {
+        display: none; } }
+  @media (min-width: 52em) {
+    .header-title {
+      padding-left: 1.2em; } }
+
+.aboutMe {
+  overflow: hidden;
+  clear: left; }
+
+.aboutMe-pic {
+  border-radius: 9999px;
+  border: 16px solid #fff;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 332px; }
+  @media (min-width: 52em) {
+    .aboutMe-pic {
+      float: right;
+      width: 34%; } }
+
+@media (min-width: 52em) {
+  .aboutMe-wrapper {
+    float: left;
+    width: 60%; } }
+
+.aboutMe-title {
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-family: "Prelo Slab W01 Bold";
+  text-align: center; }
+  @media (min-width: 52em) {
+    .aboutMe-title {
+      text-align: left; } }
+
+.recent {
+  padding: 2em 5%;
+  background: #0d832d;
+  color: #f2f4e4; }
+  @media (min-width: 35em) {
+    .recent {
+      padding: 2em 15%; } }
+
+.recentList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.recentList-item {
+  padding: 3em 0 0 0;
+  position: relative;
+  text-align: center; }
+  @media (min-width: 45em) {
+    .recentList-item {
+      width: 33.3%;
+      float: left;
+      padding-left: 1em;
+      padding-right: 1em; }
+      .recentList-item:first-child {
+        padding-left: 0; }
+      .recentList-item:last-child {
+        padding-right: 0; } }
+  .recentList-item a,
+  .recentList-item a:hover,
+  .recentList-item a:visited {
+    color: #f2f4e4; }
+
+.recentList-item-icon {
+  font-size: 43.2px;
+  font-size: 2.7rem;
+  color: #05500c;
+  display: block;
+  margin-bottom: .3em; }
+
+.recentList-item-heading {
+  font-family: "Prelo Slab W01 Bold";
+  margin: 0;
+  position: relative;
+  padding-bottom: 1em;
+  margin-bottom: 1em; }
+  .recentList-item-heading:after {
+    content: "";
+    border-top: 1px solid #05500c;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 0; }
+
+.recentList-item-externalLink {
+  font-family: "DroidSans";
+  font-weight: bold; }
+
+.recentList-item-detail {
+  font-size: 14.4px;
+  font-size: 0.9rem; }
+
+.meta {
+  display: block;
+  margin-top: 1em; }
+
+.otherThings {
+  padding: 2em 5%;
+  background: #05500c;
+  color: #f2f4e4;
+  overflow: hidden; }
+  @media (min-width: 35em) {
+    .otherThings {
+      padding: 2em 15%; } }
+  .otherThings a,
+  .otherThings a:hover,
+  .otherThings a:visited {
+    color: #f2f4e4; }
+
+.otherThings-group {
+  position: relative; }
+  @media (min-width: 62em) {
+    .otherThings-group {
+      width: 50%;
+      float: left; }
+      .otherThings-group:first-child {
+        padding-right: 1.5em; }
+      .otherThings-group:last-child {
+        padding-left: 1.5em; } }
+
+.otherThings-category {
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-family: "Prelo Slab W01 Bold";
+  position: relative;
+  line-height: 2; }
+  .otherThings-category:after {
+    content: "";
+    border-top: 1px solid #05500c;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .otherThings-category.projects {
+    margin-bottom: .5em; }
+
+.otherThings-subCategory {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  color: #0d832d;
+  font-family: "Prelo Slab W01 Bold";
+  position: relative; }
+
+.otherThings-category-icon {
+  font-size: 43.2px;
+  font-size: 2.7rem;
+  color: #0d832d;
+  padding-right: 0.25em;
+  position: relative;
+  top: .2em; }
+
+.otherThings-category-list {
+  list-style: none;
+  padding: 0; }
+
+.otherThings-category-list-item {
+  margin-bottom: 3em; }
+  .otherThings-category-list-item.pastEvent {
+    margin-bottom: 2em; }
+
+.otherThings-category-list-item-conferenceTitle,
+.otherThings-category-list-item-projectTitle {
+  font-family: "Prelo Slab W01 Bold";
+  margin-bottom: 0; }
+
+.pastEvent .otherThings-category-list-item-conferenceTitle {
+  font-size: 19.2px;
+  font-size: 1.2rem; }
+
+.otherThings-category-list-item-presentationTitle {
+  font-family: "DroidSans";
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 0 0 .4em; }
+
+.otherThings-category-list-item-date {
+  display: block;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  margin-bottom: 1em; }
+
+.otherThings-category-list-item-externalLink {
+  border-radius: 3px;
+  background: #0d832d;
+  padding: 0.5em 1.2em;
+  margin-right: .2em;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  font-family: "Prelo Slab W01 Bold";
+  line-height: 2.6;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase; }

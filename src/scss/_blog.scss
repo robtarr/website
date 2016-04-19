@@ -1,0 +1,30 @@
+// .blog {
+//   @include site-padding;
+// }
+//
+// .postList {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+//
+// .postList_item_title {
+//   margin: 0;
+//
+//   a,
+//   a:visited {
+//     font-family: "Prelo Slab W01 Bold";
+//     color: $c-blogPost-title;
+//   }
+// }
+//
+// .postList_item_date {
+//   color: $c-blogPost-date;
+// }
+//
+// .post_title {
+//   @include rem(font-size, 2);
+//   font-family: "Prelo Slab W01 Bold";
+//   color: $c-blogPost-title;
+//   margin: 0;
+// }

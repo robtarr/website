@@ -1,0 +1,44 @@
+.header {
+  @include site-padding;
+  background: $c-header;
+  color: $c-header-text;
+  min-height: 10.4em;
+  
+  a,
+  a:hover,
+  a:visited {
+    color: $c-header-text;
+  }
+}
+
+.logo {
+  float: left;
+}
+
+.header-title {
+  @include rem(font-size, 1.1);
+  font-family: "Prelo Slab W01 Bold";
+  line-height: 1.5;
+  margin: 0;
+  padding: 1.2em 0 1.2em 1.2em;
+  float: left;
+
+  .no-svg & {
+    background: url("/images/rt.png") no-repeat 0 0;
+    background-size: contain;
+    padding: 1.4em 0 1.4em 6.3em;
+  }
+
+  @include sb-media(35em) {
+    @include rem(font-size, 1.5);
+    padding-left: .7em;
+
+    br {
+      display: none;
+    }
+  }
+
+  @include sb-media(52em) {
+    padding-left: 1.2em;
+  }
+}

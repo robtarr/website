@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/robtarr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://robtarr.net
+  * I am robtarr (https://keybase.io/robtarr) on keybase.
+  * I have a public key with fingerprint 964A 0CC8 1AD5 7FFB A73B  68E7 7049 CA37 8F8E 8717
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "964a0cc81ad57ffba73b68e77049ca378f8e8717",
+            "host": "keybase.io",
+            "key_id": "7049ca378f8e8717",
+            "uid": "a189e78812577e3442699fdbf8f0a500",
+            "username": "robtarr"
+        },
+        "service": {
+            "hostname": "robtarr.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1395895596,
+    "expire_in": 157680000,
+    "prev": "768fbd127cb5da5fd99f2bfa7031367a5abc6231f884091be0cfbe180f6090f5",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.1
+Comment: https://keybase.io/crypto
+
+yMHkAnicbZFtSBRbGMd3fYsUUyjN+hJNIgR7ZV52Zs5sFBFoLx9WeiPIbD0zc2Z3
+XJ2ZnZnd7rbq/SBoRGB6zWzpRoWwQglBWVZUJqHgxgWJIMtEWEKpcLlg0ge5eEbq
+Q9D5cjj/5/f/P+fheVWc6yp0j3zoTKfYxaw7PZaNuo4zw54EIepynPAliDBavxRV
+CyLTMFXNJnyEwHkhKUmAgjLLK4oIeUbkAOJ50itIkOGBAhDgKZ7wECHdchw4RoQW
+qlZ1rOFHQJWx+hs+ul6AFBAQDwBFszyPGK+X5gRBkUUFKCRkSdIBLWRqsAVh2tRF
+G5om0eYhsBhTJSwm1jv/ClRryMZOw9RtXdKbcSFk24bP8dlxwwHPITHwIyIgqpqM
+p8aGGDItVdcIH4VJyVadTIoRWCCwrMB5CPSnoZoooDoEy3OAxMdpg2LOjBxQRJmi
+eUlkZcgqMh6EFhXIkwzFcDxkoShxNEMpAHhJgRIRKSkiogCpcKRAKizub6GIphM+
+Gn8TBnGkpQY1aEdNRLSNj53Jc7kLXQX5Oc7eXIUbS39uM5Xc8P++ZTNDDazGM1vS
+StPRhsfGyF+hPcKdi1qq9Z7VGGGDmfvu3Oc3/EHXlNzU2X5pIeS6PlSf93Ua3LU2
+PT0QT8W+NVf9Pbu3dKmiPGN27ILvdj8cvh3NMWaXereDle5UMq+799h0+PMO/xd/
+QascdKuraKZvftvgs1Ot/yy8pSeqPZuflNZUJobq+JKVyfNF6a6ljy/DQG55sLXH
+PzfY/VqbjNycOfvHtflHZRdGK6aTRv3+uv6yqpKOw28aDyWXGwZOlk9MxHKvttf2
+f6/pAjmVkcH8vmzRwSNz9Lg1On/LL/W/7/H27tQ722r7PqEr//17ufj0i8VwVjwx
+1bIGdW4U9Q==
+=LePF
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/robtarr
+
+==================================================================
