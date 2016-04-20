@@ -27,6 +27,12 @@ module.exports = function(shipit) {
         files: [
           '.env.json',
         ],
+        dirs: [
+          {
+            path: 'node_modules',
+            overwrite: true,
+          },
+        ],
       },
     },
 
