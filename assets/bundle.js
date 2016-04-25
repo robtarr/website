@@ -45,8 +45,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	__webpack_require__(272);
-	module.exports = __webpack_require__(274);
+	__webpack_require__(273);
+	module.exports = __webpack_require__(275);
 
 
 /***/ },
@@ -61,10 +61,12 @@
 	let Twitter = __webpack_require__(160);
 	let Github = __webpack_require__(270);
 	let Blog = __webpack_require__(271);
+	let Books = __webpack_require__(272);
 
 	ReactDOM.render(React.createElement(Twitter, null), document.getElementById('twitter-component'))
 	ReactDOM.render(React.createElement(Github, null), document.getElementById('github-component'))
 	ReactDOM.render(React.createElement(Blog, null), document.getElementById('blog-component'))
+	ReactDOM.render(React.createElement(Books, null), document.getElementById('books-component'))
 
 
 /***/ },
@@ -19711,7 +19713,9 @@
 
 	    return (
 	      React.createElement("div", null, 
-	        React.createElement("span", {className: "recentList-item-icon icon-twitter"}), 
+	        React.createElement("svg", {className: "icon icon-twitter recentList-item-icon", viewBox: "0 0 40 32"}, 
+	          React.createElement("path", {d: "M39.375,3.789 C37.926,4.432 36.369,4.866 34.735,5.061 C36.403,4.061 37.684,2.478 38.287,0.592 C36.726,1.518 34.997,2.19 33.157,2.552 C31.684,0.982 29.584,0.001 27.261,0.001 C22.8,0.001 19.183,3.618 19.183,8.079 C19.183,8.712 19.254,9.329 19.392,9.92 C12.678,9.583 6.726,6.367 2.742,1.48 C2.047,2.673 1.648,4.061 1.648,5.541 C1.648,8.344 3.074,10.816 5.242,12.265 C3.918,12.223 2.672,11.86 1.583,11.255 C1.582,11.289 1.582,11.322 1.582,11.357 C1.582,15.271 4.367,18.536 8.062,19.278 C7.384,19.463 6.671,19.561 5.934,19.561 C5.413,19.561 4.907,19.51 4.414,19.416 C5.442,22.625 8.425,24.961 11.96,25.026 C9.195,27.193 5.712,28.484 1.927,28.484 C1.275,28.484 0.632,28.446 -2.22044605e-15,28.371 C3.575,30.663 7.821,32.001 12.383,32.001 C27.242,32.001 35.367,19.692 35.367,9.016 C35.367,8.666 35.359,8.318 35.343,7.971 C36.922,6.832 38.291,5.409 39.374,3.789 L39.375,3.789 Z"})
+	        ), 
 	        React.createElement("h1", {className: "recentList-item-heading"}, "What I’m Talking About"), 
 	        React.createElement("a", {className: "recentList-item-externalLink", "data-category": "twitter", href: "//twitter.com/robtarr"}, 
 	          "@robtarr"
@@ -19771,7 +19775,7 @@
 /* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var require;var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process, global, module) {/*!
+	var __WEBPACK_AMD_DEFINE_RESULT__;var require;/* WEBPACK VAR INJECTION */(function(process, global, module) {/*!
 	 * @overview es6-promise - a tiny implementation of Promises/A+.
 	 * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
 	 * @license   Licensed under MIT license
@@ -34355,7 +34359,10 @@
 
 	    return (
 	      React.createElement("div", null, 
-	        React.createElement("span", {className: "recentList-item-icon icon-github"}), 
+	        React.createElement("svg", {className: "icon icon-github recentList-item-icon"}, 
+	          React.createElement("path", {d: "M40.060 15.535l0.030-0.148c-3.315-0.663-6.717-0.67-8.775-0.584 0.338-1.218 0.44-2.62 0.44-4.183 0-2.242-0.842-4.035-2.21-5.4 0.239-0.771 0.558-2.484-0.319-4.677 0 0-1.547-0.491-5.046 1.851-1.371-0.343-2.829-0.512-4.29-0.512-1.607 0-3.232 0.205-4.746 0.62-3.611-2.463-5.205-1.959-5.205-1.959-1.040 2.602-0.397 4.528-0.202 5.007-1.223 1.32-1.969 3.005-1.969 5.070 0 1.559 0.177 2.958 0.611 4.174-2.076-0.076-5.354-0.046-8.55 0.593l0.029 0.148c3.216-0.643 6.515-0.665 8.578-0.587 0.096 0.252 0.202 0.496 0.321 0.732-2.040 0.066-5.524 0.326-8.862 1.268l0.041 0.145c3.365-0.949 6.879-1.202 8.899-1.264 1.219 2.272 3.622 3.74 7.898 4.201-0.607 0.408-1.226 1.101-1.477 2.274-0.827 0.396-3.445 1.361-5.015-1.34 0 0-0.879-1.607-2.562-1.733 0 0-1.632-0.025-0.113 1.017 0 0 1.092 0.515 1.846 2.449 0 0 0.983 3.299 5.727 2.24v3.408c0 0-0.1 1.205-1.205 1.607 0 0-0.653 0.452 0.051 0.703 0 0 3.063 0.251 3.063-2.259v-3.716c0 0-0.121-1.474 0.602-1.986v6.103c0 0-0.050 1.456-0.803 2.009 0 0-0.502 0.904 0.602 0.653 0 0 2.109-0.301 2.21-2.762l0.048-6.177h0.507l0.048 6.177c0.1 2.461 2.21 2.762 2.21 2.762 1.104 0.251 0.602-0.653 0.602-0.653-0.753-0.552-0.803-2.009-0.803-2.009v-6.051c0.724 0.563 0.602 1.933 0.602 1.933v3.716c0 2.511 3.063 2.259 3.063 2.259 0.703-0.251 0.051-0.703 0.051-0.703-1.105-0.402-1.206-1.607-1.206-1.607v-4.871c0-1.899-0.8-2.905-1.582-3.436 4.559-0.452 6.748-1.924 7.756-4.212 1.997 0.055 5.591 0.298 9.029 1.268l0.041-0.145c-3.418-0.964-6.989-1.214-9.006-1.272 0.096-0.231 0.179-0.471 0.253-0.719 2.048-0.085 5.466-0.084 8.794 0.581l-0.005-0.002zM9.537 21.012c-0.18 0-0.327-0.101-0.327-0.226s0.146-0.226 0.327-0.226c0.18 0 0.326 0.101 0.327 0.226s-0.146 0.226-0.327 0.226zM9.863 20.786c0-0 0-0 0-0s0-0 0-0v0zM10.039 21.765c-0.18 0-0.327-0.101-0.327-0.226s0.146-0.226 0.327-0.226c0.18 0 0.326 0.101 0.327 0.226s-0.146 0.225-0.327 0.225zM10.365 21.539c0-0 0-0 0-0s0-0 0-0v0zM8.406 19.631c-0 0.125-0.146 0.226-0.326 0.226s-0.327-0.101-0.327-0.226c0-0.125 0.146-0.226 0.327-0.226s0.326 0.101 0.326 0.226zM10.917 22.242c0-0 0-0 0-0v0c0-0 0-0 0-0zM8.406 19.631c0-0 0-0 0-0v0c0-0 0-0 0-0zM9.311 20.133c0-0 0-0 0-0s0-0 0-0v0zM8.984 20.358c-0.18 0-0.327-0.101-0.327-0.226s0.146-0.226 0.327-0.226c0.18 0 0.326 0.101 0.326 0.226s-0.146 0.225-0.326 0.225zM11.671 22.844c-0 0.125-0.146 0.226-0.327 0.226s-0.327-0.101-0.327-0.226 0.146-0.226 0.327-0.226c0.18 0 0.326 0.101 0.327 0.226zM10.917 22.242c-0 0.125-0.146 0.226-0.327 0.226s-0.327-0.101-0.327-0.226c0-0.125 0.146-0.226 0.327-0.226s0.326 0.101 0.327 0.226zM13.776 23.247c-0 0.125-0.146 0.226-0.327 0.226s-0.327-0.101-0.327-0.226c0-0.125 0.146-0.226 0.327-0.226s0.326 0.101 0.327 0.226zM14.841 23.072c-0 0.125-0.146 0.225-0.327 0.225s-0.327-0.101-0.327-0.226c0-0.125 0.146-0.226 0.327-0.226s0.326 0.101 0.327 0.226zM14.841 23.072c0-0 0-0 0-0s0-0 0-0v0zM13.776 23.247c0-0 0-0 0-0v0c0-0 0-0 0-0zM11.671 22.844c0 0 0 0 0-0v0c0 0 0 0 0-0zM12.726 23.247c0-0 0-0 0-0v0c0-0 0-0 0-0zM12.726 23.247c-0 0.125-0.146 0.226-0.327 0.226s-0.327-0.101-0.327-0.226c0-0.125 0.146-0.226 0.327-0.226s0.326 0.101 0.327 0.226zM28.851 13.636c0 5.405-4.029 5.551-8.999 5.551s-8.999-0.748-8.999-5.551c0-1.15 0.566-2.218 1.536-3.104 1.618-1.477 4.356-0.695 7.463-0.695 3.093-0 5.821-0.79 7.442 0.676l0 0c0.982 0.89 1.556 1.964 1.556 3.122zM16.259 13.945c0 0.992-0.56 1.797-1.248 1.797s-1.248-0.804-1.248-1.797c0-0.993 0.559-1.797 1.248-1.797s1.248 0.804 1.248 1.797l0 0zM26.304 13.945c0 0.992-0.559 1.797-1.248 1.797s-1.248-0.804-1.248-1.797c0-0.993 0.559-1.797 1.248-1.797s1.248 0.804 1.248 1.797l0 0zM20.349 16.305c0 0.259-0.21 0.468-0.468 0.468s-0.468-0.21-0.468-0.468c0-0.259 0.21-0.468 0.468-0.468s0.468 0.21 0.468 0.468zM18.788 17.489c-0.028-0.078 0.014-0.164 0.092-0.192s0.164 0.014 0.192 0.092c0.121 0.34 0.443 0.569 0.803 0.569s0.683-0.228 0.803-0.569c0.028-0.078 0.113-0.119 0.192-0.092s0.119 0.113 0.092 0.192c-0.163 0.46-0.6 0.769-1.087 0.769s-0.923-0.307-1.086-0.768l-0-0.001zM7.207 20.301l-0.326 1.137c0 0-0.085 0.411 0.302 0.484 0.404-0.008 0.371-0.386 0.343-0.509l-0.319-1.112z"})
+	        ), 
+
 	        React.createElement("h1", {className: "recentList-item-heading"}, "What I’m Working On"), 
 	        React.createElement("a", {className: "recentList-item-externalLink", "data-category": "github", href: "//github.com/robtarr"}, 
 	          "github.com"
@@ -34414,7 +34421,10 @@
 
 	    return (
 	      React.createElement("div", null, 
-	        React.createElement("span", {className: "recentList-item-icon icon-writing"}), 
+	        React.createElement("svg", {className: "icon icon-writing recentList-item-icon"}, 
+	          React.createElement("path", {d: "M1.66 1.66c-2.002 2.002-2.002 5.248 0 7.25l7.25-7.25c-2.002-2.002-5.248-2.002-7.25 0zM19.434 26.683l12.379 5.13-5.13-12.379-15.79-15.789-7.25 7.249 15.79 15.789zM21.083 23.471c0.659-0.66 1.907-0.48 2.182-0.205-0.275-0.275-0.455-1.523 0.205-2.182s1.976-0.893 1.976-0.893l2.947 7.113-1.091 1.091-7.113-2.947c0 0 0.235-1.317 0.894-1.976v0z"})
+	        ), 
+
 	        React.createElement("h1", {className: "recentList-item-heading"}, "What I’m Writing"), 
 	        React.createElement("a", {className: "recentList-item-externalLink", "data-category": "sparkbox", href:  name }, 
 	           name 
@@ -34438,7 +34448,60 @@
 /* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(273);
+	/** @jsx React.DOM */'use strict'
+
+	let React = __webpack_require__(2);
+	let apiFetch = __webpack_require__(161);
+
+	module.exports = React.createClass({
+	  displayName: 'BooksReact',
+	  refreshTime: 1000 * 60,
+
+	  componentDidMount: function() {
+	    let _getInfo = function()  {
+	      apiFetch('/data/gooodreads.json')
+	        .then(function(data)  {
+	          this.setState(data);
+	        }.bind(this))
+	    }.bind(this);
+
+	    setInterval(_getInfo, this.refreshTime);
+	  },
+
+	  getInitialState: function() {
+	    if (typeof initialData === 'object' &&
+	        typeof initialData.books === 'object') {
+
+	      return initialData.books;
+	    }
+
+	    return this.props;
+	  },
+
+	  render: function() {
+	    let $__0=     this.state,title=$__0.title,link=$__0.link;
+
+	    return (
+	      React.createElement("div", null, 
+	        React.createElement("svg", {className: "icon icon-books recentList-item-icon"}, 
+	          React.createElement("path", {d: "M26,4 L26,30 L5,30 C3.342,30 2,28.656 2,27 C2,25.344 3.342,24 5,24 L24,24 L24,0 L4,0 C1.8,0 0,1.8 0,4 L0,28 C0,30.2 1.8,32 4,32 L28,32 L28,4 L26,4 L26,4 Z"}), 
+	          React.createElement("path", {d: "M5.002,26 L5.002,26 L5,26 C4.448,26 4,26.448 4,27 C4,27.552 4.448,28 5,28 L5.002,28 L5.002,28 L23.998,28 L23.998,26 L5.002,26 L5.002,26 Z"})
+	        ), 
+
+	        React.createElement("h1", {className: "recentList-item-heading"}, "What I’m Reading"), 
+	        React.createElement("a", {className: "recentList-item-externalLink", href:  link }, 
+	           title 
+	        )
+	      ))
+	  },
+	})
+
+
+/***/ },
+/* 273 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(274);
 
 	(function() {
 	  var Animator, rSVG, tSVG,
@@ -34498,7 +34561,7 @@
 
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports) {
 
 	/*! modernizr 3.3.1 (Custom Build) | MIT *
@@ -34507,7 +34570,7 @@
 
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports) {
 
 	(function() {

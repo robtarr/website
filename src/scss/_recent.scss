@@ -9,6 +9,12 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  width: 100%;
+
+  @include sb-media(45em) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .recentList-item {
@@ -17,8 +23,13 @@
   text-align: center;
 
   @include sb-media(45em) {
-    width: 33.3%;
-    float: left;
+    display: flex;
+    flex-basis: calc(50% - 1em);
+    flex-direction: row;
+    justify-content: center;
+
+    // width: 33.3%;
+    // float: left;
     padding-left: 1em;
     padding-right: 1em;
 
@@ -38,9 +49,8 @@
 }
 
 .recentList-item-icon {
-  @include rem(font-size, 2.7);
-  color: $c-recent-icon;
-  display: block;
+  fill: $c-recent-icon;
+  display: inline-block;
   margin-bottom: .3em;
 }
 

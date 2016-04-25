@@ -12,6 +12,7 @@ const apiFetch = require('./src/js/apiFetch');
 const Twitter = require('./src/components/twitter');
 const Github = require('./src/components/github');
 const Blog = require('./src/components/blog');
+const Books = require('./src/components/books');
 const Projects = require('./src/components/projects');
 const SpeakingFuture = require('./src/components/speaking-future');
 const SpeakingPast = require('./src/components/speaking-past');
@@ -19,6 +20,7 @@ const SpeakingPast = require('./src/components/speaking-past');
 const twitter = React.createFactory(Twitter);
 const github = React.createFactory(Github);
 const blog = React.createFactory(Blog);
+const books = React.createFactory(Books);
 const projects = React.createFactory(Projects);
 const speakingFuture = React.createFactory(SpeakingFuture);
 const speakingPast = React.createFactory(SpeakingPast);
@@ -39,8 +41,7 @@ function getData(type, renderData) {
     });
 }
 
-// 🔑
-app.get('/%F0%9F%94%91', function(req, res) {
+app.get(encodeURI('🔑'), function(req, res) {
   res.render('./src/gpg-key');
 });
 
@@ -50,17 +51,21 @@ app.get('/', function(req, res) {
   getData('twitter', renderData)
   .then(() => getData('github', renderData))
   .then(() => getData('blog', renderData))
+  .then(() => getData('books', renderData))
   .then(() => getData('projects', renderData))
   .then(() => getData('speaking', renderData))
   .then((data) => {
+    console.log('>>', ReactDOM.renderToString(books(renderData.books)));
     res.render('./src/index', {
       ga: process.env.GA,
       twitter: ReactDOM.renderToString(twitter(renderData.twitter)),
       github: ReactDOM.renderToString(github(renderData.github)),
       blog: ReactDOM.renderToString(blog(renderData.blog)),
+      books: ReactDOM.renderToString(books(renderData.books)),
       twitterData: JSON.stringify(renderData.twitter),
       githubData: JSON.stringify(renderData.github),
       blogData: JSON.stringify(renderData.blog),
+      booksData: JSON.stringify(renderData.books),
       projects: ReactDOM.renderToString(projects(renderData.projects)),
       speakingFuture: ReactDOM.renderToString(speakingFuture(renderData.speaking)),
       speakingPast: ReactDOM.renderToString(speakingPast(renderData.speaking)),
