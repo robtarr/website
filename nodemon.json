@@ -13,7 +13,8 @@
   },
   "watch": [
     "app.js",
-    "src/**/*"
+    "src/**/*",
+    "lib/**/*.js"
   ],
   "env": {
     "NODE_ENV": "development"

@@ -1,3 +1,5 @@
+require('./stream');
+
 (function() {
   var rob;
 

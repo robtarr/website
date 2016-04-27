@@ -1,21 +1,15 @@
 'use strict'
 
-let React = require('react');
-let apiFetch = require('../js/apiFetch.js');
+const React = require('react');
+const ps = require('../js/pubsub');
 
 module.exports = React.createClass({
   displayName: 'BlogReact',
-  refreshTime: 1000 * 60,
 
   componentDidMount: function() {
-    let _getInfo = () => {
-      apiFetch('/data/blog.json')
-        .then((data) => {
-          this.setState(data);
-        })
-    };
-
-    setInterval(_getInfo, this.refreshTime);
+    ps.subscribe('message-blog', (data) => {
+      this.setState(data);
+    });
   },
 
   getInitialState: function() {

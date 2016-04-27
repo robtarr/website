@@ -1,8 +1,13 @@
+'use strict';
+
 require('babel-core/register')
 
 const express = require('express');
 const app = express();
 const helmet = require('helmet');
+const sse = require('./lib/sse');
+const dataMonitor = require('./lib/data-monitor');
+
 const loadPartials = require('./lib/load-partials');
 
 const React = require('react');
@@ -25,13 +30,16 @@ const projects = React.createFactory(Projects);
 const speakingFuture = React.createFactory(SpeakingFuture);
 const speakingPast = React.createFactory(SpeakingPast);
 
+let connections = [];
+
 app.use('/', express.static('assets'));
 app.use('/data', express.static('data'));
 app.use(helmet());
-
+app.use(sse);
 app.set('view engine', 'hbs');
 app.set('views', __dirname);
 
+dataMonitor.init(connections);
 loadPartials('src/partials');
 
 function getData(type, renderData) {
@@ -43,6 +51,11 @@ function getData(type, renderData) {
 
 app.get(encodeURI('🔑'), function(req, res) {
   res.render('./src/gpg-key');
+});
+
+app.get('/stream', function(req, res) {
+  res.sseSetup();
+  connections.push(res);
 });
 
 app.get('/', function(req, res) {

@@ -1,21 +1,15 @@
 'use strict'
 
-let React = require('react');
-let apiFetch = require('../js/apiFetch.js');
+const React = require('react');
+const ps = require('../js/pubsub');
 
-let Twitter = React.createClass({
+const Twitter = React.createClass({
   displayName: 'TwitterReact',
-  refreshTime: 1000 * 60,
 
   componentDidMount: function() {
-    let _getInfo = () => {
-      apiFetch('/data/twitter.json')
-        .then((data) => {
-          this.setState(data);
-        })
-    };
-
-    setInterval(_getInfo, this.refreshTime);
+    ps.subscribe('message-twitter', (data) => {
+      this.setState(data);
+    });
   },
 
   getInitialState: function() {

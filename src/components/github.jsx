@@ -1,21 +1,16 @@
 'use strict'
 
-let React = require('react');
-let apiFetch = require('../js/apiFetch.js');
+const React = require('react');
+const ps = require('../js/pubsub');
 
 module.exports = React.createClass({
   displayName: 'GithubReact',
   refreshTime: 1000 * 60,
 
   componentDidMount: function() {
-    let _getInfo = () => {
-      apiFetch('/data/github.json')
-        .then((data) => {
-          this.setState(data);
-        })
-    };
-
-    setInterval(_getInfo, this.refreshTime);
+    ps.subscribe('message-github', (data) => {
+      this.setState(data);
+    });
   },
 
   getInitialState: function() {

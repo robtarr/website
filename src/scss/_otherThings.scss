@@ -6,6 +6,11 @@ $bp-columns-2up: 62em;
   color: $c-otherThings-text;
   overflow: hidden;
 
+  @include sb-media($bp-columns-2up) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   a,
   a:hover,
   a:visited {
@@ -14,11 +19,15 @@ $bp-columns-2up: 62em;
 }
 
 .otherThings-group {
-  position: relative;
+  // position: relative;
 
   @include sb-media($bp-columns-2up) {
-    width: 50%;
-    float: left;
+    // width: 50%;
+    // float: left;
+    // display: flex;
+    flex-basis: calc(50% - 1em);
+    flex-direction: row;
+    justify-content: center;
 
     &:first-child {
       padding-right: 1.5em;
@@ -32,7 +41,7 @@ $bp-columns-2up: 62em;
 .otherThings-category {
   @include rem(font-size, 2.25);
   font-family: "Prelo Slab W01 Bold";
-  position: relative;
+  // position: relative;
   line-height: 2;
 
   &:after {
@@ -54,7 +63,7 @@ $bp-columns-2up: 62em;
   @include rem(font-size, 1.2);
   color: $c-otherThings-subCategory;
   font-family: "Prelo Slab W01 Bold";
-  position: relative;
+  // position: relative;
 }
 
 

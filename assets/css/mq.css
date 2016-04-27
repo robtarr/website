@@ -208,27 +208,29 @@ p {
   @media (min-width: 35em) {
     .otherThings {
       padding: 2em 15%; } }
+  @media (min-width: 62em) {
+    .otherThings {
+      display: flex;
+      flex-wrap: wrap; } }
   .otherThings a,
   .otherThings a:hover,
   .otherThings a:visited {
     color: #f2f4e4; }
 
-.otherThings-group {
-  position: relative; }
-  @media (min-width: 62em) {
-    .otherThings-group {
-      width: 50%;
-      float: left; }
-      .otherThings-group:first-child {
-        padding-right: 1.5em; }
-      .otherThings-group:last-child {
-        padding-left: 1.5em; } }
+@media (min-width: 62em) {
+  .otherThings-group {
+    flex-basis: calc(50% - 1em);
+    flex-direction: row;
+    justify-content: center; }
+    .otherThings-group:first-child {
+      padding-right: 1.5em; }
+    .otherThings-group:last-child {
+      padding-left: 1.5em; } }
 
 .otherThings-category {
   font-size: 36px;
   font-size: 2.25rem;
   font-family: "Prelo Slab W01 Bold";
-  position: relative;
   line-height: 2; }
   .otherThings-category:after {
     content: "";
@@ -244,8 +246,7 @@ p {
   font-size: 19.2px;
   font-size: 1.2rem;
   color: #0d832d;
-  font-family: "Prelo Slab W01 Bold";
-  position: relative; }
+  font-family: "Prelo Slab W01 Bold"; }
 
 .otherThings-category-icon {
   font-size: 43.2px;
