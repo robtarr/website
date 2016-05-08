@@ -3,6 +3,11 @@ node_modules/*
 .env-dev.json
 .env-prod.json
 
+data/twitter.json
+data/github.json
+data/books.json
+data/blog.json
+
 npm-debug.log
 .sass-cache
 tmp/*

@@ -1,0 +1,9 @@
+machine:
+  node:
+    version: 4.3.1
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - npm run deploy
