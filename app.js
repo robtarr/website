@@ -30,9 +30,12 @@ const projects = React.createFactory(Projects);
 const speakingFuture = React.createFactory(SpeakingFuture);
 const speakingPast = React.createFactory(SpeakingPast);
 
+const oneDay = 86400000;
+const oneWeek = oneDay * 7;
+
 let connections = [];
 
-app.use('/', express.static('assets'));
+app.use('/', express.static('assets', { maxAge: oneWeek }));
 app.use('/data', express.static('data'));
 app.use(helmet());
 app.use(sse);
