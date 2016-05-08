@@ -2,7 +2,6 @@
 
 require('dot-env');
 const Twitter = require('twitter');
-const moment = require('moment');
 const fs = require('fs');
 
 const client = new Twitter({
@@ -22,7 +21,7 @@ module.exports = {
 
         try {
           tweetData = {
-            date: moment(new Date(tweets[0].created_at)).fromNow(),
+            date: tweets[0].created_at,
             text: tweets[0].text,
             link: `http://twitter.com/robtarr/status/${tweets[0].id_str}`,
           };

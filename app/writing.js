@@ -29,7 +29,7 @@ module.exports = {
             siteLink: 'https://seesparkbox.com/foundry/author/rob_tarr',
             title: json.title,
             link: json.permalink,
-            date: moment(postDate).fromNow(),
+            date: postDate,
           };
         } else {
           return {
@@ -37,7 +37,7 @@ module.exports = {
             siteLink: 'https://blog.robtarr.net',
             title: json.title.rendered,
             link: json.link,
-            date: moment(new Date(json.date)).fromNow(),
+            date: json.date,
           };
         }
       });

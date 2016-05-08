@@ -2,6 +2,7 @@
 
 const React = require('react');
 const ps = require('../js/pubsub');
+const howLongAgo = require('../js/how-long-ago');
 
 const Twitter = React.createClass({
   displayName: 'TwitterReact',
@@ -40,7 +41,7 @@ const Twitter = React.createClass({
               { text }
               <span className='meta'>
                 <a className='time' href={ link }>
-                  { date }
+                  { howLongAgo(date) }
                 </a>
               </span>
             </p>

@@ -4,7 +4,6 @@ const Promise = require('bluebird');
 const github = require('octonode');
 const _ = require('lodash');
 const fs = require('fs');
-const moment = require('moment');
 
 const client = github.client();
 const ghuser = client.user('robtarr');
@@ -21,7 +20,7 @@ module.exports = {
       if (latest.repo.name && latest.created_at) {
         let jsonString = JSON.stringify({
           repo: latest.repo.name,
-          date: moment(new Date(latest.created_at)).fromNow(),
+          date: latest.created_at,
         });
 
         fs.writeFile('data/github.json', jsonString, function() {

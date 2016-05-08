@@ -2,6 +2,7 @@
 
 const React = require('react');
 const ps = require('../js/pubsub');
+const howLongAgo = require('../js/how-long-ago');
 
 module.exports = React.createClass({
   displayName: 'GithubReact',
@@ -41,7 +42,7 @@ module.exports = React.createClass({
             <p>
               Pushed code to <a href={ url }>{ repo }</a>
               <span className='meta'>
-                { date }
+                { howLongAgo(date) }
               </span>
             </p>
           </div>

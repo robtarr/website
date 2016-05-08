@@ -11,11 +11,12 @@ module.exports = {
   get: function() {
     function _processAPI(err, res, xmlData) {
       let bookData;
+      let book;
 
       parseString(xmlData, function(err, data) {
-        let book = data.GoodreadsResponse.reviews[0].review[0].book[0]
-
         try {
+          book = data.GoodreadsResponse.reviews[0].review[0].book[0]
+
           bookData = {
             title: book.title[0],
             link: book.link[0],

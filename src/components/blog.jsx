@@ -2,6 +2,7 @@
 
 const React = require('react');
 const ps = require('../js/pubsub');
+const howLongAgo = require('../js/how-long-ago');
 
 module.exports = React.createClass({
   displayName: 'BlogReact',
@@ -40,7 +41,7 @@ module.exports = React.createClass({
             <p>
               <a href={ link }>{ title }</a>
               <span className='meta'>
-                { date }
+                { howLongAgo(date) }
               </span>
             </p>
           </div>
