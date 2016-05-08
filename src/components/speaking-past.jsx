@@ -22,6 +22,7 @@ let SpeakingPast = React.createClass({
         detail={conference.detail}
         date={conference.date}
         links={conference.links}
+        key={conference.date}
         eventModifier='pastEvent'
       />
     });

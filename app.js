@@ -68,7 +68,6 @@ app.get('/', function(req, res) {
   .then(() => getData('projects', renderData))
   .then(() => getData('speaking', renderData))
   .then((data) => {
-    console.log('>>', ReactDOM.renderToString(books(renderData.books)));
     res.render('./src/index', {
       ga: process.env.GA,
       twitter: ReactDOM.renderToString(twitter(renderData.twitter)),

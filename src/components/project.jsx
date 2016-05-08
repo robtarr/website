@@ -9,7 +9,7 @@ let Project = React.createClass({
 
   _getLinks: (links) => {
     return _.map(links, (link) => {
-      return <ItemLink text={link.text} href={link.href} />
+      return <ItemLink text={link.text} href={link.href} key={link.href}/>
     });
   },
 

@@ -1,3 +1,5 @@
+$twoColumns: 50em;
+
 .recent {
   @include site-padding;
   background: $c-recent;
@@ -11,7 +13,7 @@
   overflow: hidden;
   width: 100%;
 
-  @include sb-media(45em) {
+  @include sb-media($twoColumns) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -22,14 +24,12 @@
   position: relative;
   text-align: center;
 
-  @include sb-media(45em) {
+  @include sb-media($twoColumns) {
     display: flex;
     flex-basis: calc(50% - 1em);
     flex-direction: row;
     justify-content: center;
 
-    // width: 33.3%;
-    // float: left;
     padding-left: 1em;
     padding-right: 1em;
 
@@ -50,8 +50,8 @@
 
 .recentList-item-icon {
   fill: $c-recent-icon;
-  display: inline-block;
-  margin-bottom: .3em;
+  display: inline;
+  margin: 0 1em -0.7em 0;
 }
 
 .recentList-item-heading {
@@ -60,15 +60,28 @@
   position: relative;
   padding-bottom: 1em;
   margin-bottom: 1em;
+  display: inline-block;
 
   &:after {
     content: "";
-    border-top: 1px solid $c-recent-separator;
-    width: 50%;
+    border-top: 1px solid #05500c;
+    width: 100%;
+    width: calc(100% + 3em);
     position: absolute;
-    left: 25%;
+    left: -2.7em;
     bottom: 0;
+
+    @include sb-media(45em) {
+      width: 90%;
+      left: 5%;
+    }
   }
+
+}
+
+.recentList-item-primaryLink {
+  display: block;
+  position: relative;
 }
 
 .recentList-item-externalLink {

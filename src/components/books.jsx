@@ -5,7 +5,6 @@ const ps = require('../js/pubsub');
 
 module.exports = React.createClass({
   displayName: 'BooksReact',
-  refreshTime: 1000 * 60,
 
   componentDidMount: function() {
     ps.subscribe('message-books', (data) => {
@@ -24,19 +23,29 @@ module.exports = React.createClass({
   },
 
   render: function() {
-    let { title, link } = this.state;
+    let { title, link, author, authorLink } = this.state;
 
     return (
       <div>
-        <svg className='icon icon-books recentList-item-icon'>
-          <path d='M26,4 L26,30 L5,30 C3.342,30 2,28.656 2,27 C2,25.344 3.342,24 5,24 L24,24 L24,0 L4,0 C1.8,0 0,1.8 0,4 L0,28 C0,30.2 1.8,32 4,32 L28,32 L28,4 L26,4 L26,4 Z'></path>
-          <path d='M5.002,26 L5.002,26 L5,26 C4.448,26 4,26.448 4,27 C4,27.552 4.448,28 5,28 L5.002,28 L5.002,28 L23.998,28 L23.998,26 L5.002,26 L5.002,26 Z'></path>
+        <svg className='icon icon-books recentList-item-icon' viewBox='0 0 39 44'>
+          <path d='M35.75,5.5 L35.75,41.25 L6.875,41.25 C4.59525,41.25 2.75,39.402 2.75,37.125 C2.75,34.848 4.59525,33 6.875,33 L33,33 L33,0 L5.5,0 C2.475,0 0,2.475 0,5.5 L0,38.5 C0,41.525 2.475,44 5.5,44 L38.5,44 L38.5,5.5 L35.75,5.5 L35.75,5.5 L35.75,5.5 Z'></path>
+          <path d='M6.87775,35.75 L6.87775,35.75 L6.875,35.75 C6.116,35.75 5.5,36.366 5.5,37.125 C5.5,37.884 6.116,38.5 6.875,38.5 L6.87775,38.5 L6.87775,38.5 L32.99725,38.5 L32.99725,35.75 L6.87775,35.75 L6.87775,35.75 L6.87775,35.75 Z'></path>
         </svg>
 
         <h1 className='recentList-item-heading'>What I’m Reading</h1>
-        <a className='recentList-item-externalLink' href={ link }>
+        <a className='recentList-item-primaryLink recentList-item-externalLink' href={ link }>
           { title }
         </a>
+        <article>
+          <div className='recentList-item-detail'>
+            <p>
+              <span>by: </span>
+              <a className='recentList-item-externalLink' href={ authorLink }>
+                { author }
+              </a>
+            </p>
+          </div>
+        </article>
       </div>)
   },
 })

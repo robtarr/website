@@ -9,7 +9,7 @@ let Projects = React.createClass({
 
   _getProjects: (projects) => {
     return _.map(projects, (project) => {
-      return <Project title={project.title} detail={project.detail} links={project.links}/>
+      return <Project title={project.title} detail={project.detail} links={project.links} key={project.title}/>
     });
   },
 

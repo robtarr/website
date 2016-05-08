@@ -1,5 +1,7 @@
 'use strict';
 
+require('dot-env');
+
 const Promise = require('bluebird');
 const request = require('request');
 const _ = require('lodash');
@@ -22,6 +24,7 @@ module.exports = {
         if (json.permalink) {
           return {
             name: 'seesparkbox.com',
+            siteLink: 'https://seesparkbox.com/foundry/author/rob_tarr',
             title: json.title,
             link: json.permalink,
             date: moment(Number(json.pub_date) * 1000).format('YYYY-MM-DDTHH:MM:SS'),
@@ -29,6 +32,7 @@ module.exports = {
         } else {
           return {
             name: 'blog.robtarr.net',
+            siteLink: 'https://blog.robtarr.net',
             title: json.title.rendered,
             link: json.link,
             date: json.date,

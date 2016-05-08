@@ -23,16 +23,16 @@ module.exports = React.createClass({
   },
 
   render: function() {
-    let { name, title, link, date } = this.state;
+    let { name, siteLink, title, link, date } = this.state;
 
     return (
       <div>
-        <svg className='icon icon-writing recentList-item-icon'>
-          <path d='M1.66 1.66c-2.002 2.002-2.002 5.248 0 7.25l7.25-7.25c-2.002-2.002-5.248-2.002-7.25 0zM19.434 26.683l12.379 5.13-5.13-12.379-15.79-15.789-7.25 7.249 15.79 15.789zM21.083 23.471c0.659-0.66 1.907-0.48 2.182-0.205-0.275-0.275-0.455-1.523 0.205-2.182s1.976-0.893 1.976-0.893l2.947 7.113-1.091 1.091-7.113-2.947c0 0 0.235-1.317 0.894-1.976v0z'></path>
+        <svg className='icon icon-writing recentList-item-icon' viewBox='0 0 45 45'>
+          <path d='M2.24559662,2.24559662 C-0.537198874,5.02839212 -0.537198874,9.54035724 2.24559662,12.3231527 L12.3231527,2.24559662 C9.54035724,-0.537198874 5.02839212,-0.537198874 2.24559662,2.24559662 L2.24559662,2.24559662 Z M44.1585,44.1585 L37.0277603,26.9515942 L15.0795381,5.00476198 L5.00198197,15.0809281 L26.9502042,37.0277603 L44.1585,44.1585 Z M29.243717,32.5630554 C30.1597321,31.6456503 31.8944617,31.8958517 32.2767138,32.2781038 C31.8944617,31.8958517 31.6442603,30.1611221 32.5616654,29.245107 C33.4790705,28.3290919 35.3083207,28.00383 35.3083207,28.00383 L39.4046735,37.8909551 L37.8881751,39.4074535 L28.00105,35.3111007 C28.00105,35.3111007 28.3277019,33.4804605 29.243717,32.5644454 L29.243717,32.5644454 L29.243717,32.5630554 Z'></path>
         </svg>
 
         <h1 className='recentList-item-heading'>What I’m Writing</h1>
-        <a className='recentList-item-externalLink' data-category='sparkbox' href={ name }>
+        <a className='recentList-item-primaryLink recentList-item-externalLink' data-category='sparkbox' href={ siteLink }>
           { name }
         </a>
         <article>

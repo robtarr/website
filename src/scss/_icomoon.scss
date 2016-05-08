@@ -1,8 +1,6 @@
 .icon {
 	display: inline-block;
-	font-size: 32px;
-	width: 1em;
-	height: 1em;
+	height: 2.5em;
 	fill: $secondary;
 }
 
@@ -16,18 +14,22 @@ Example showing how to change the color/size of the icons:
 
 .icon-speaking {
 	fill: $primary;
+	top: 0.5em;
+	position: relative;
 }
 
 .icon-projects {
 	fill: $primary;
+	top: 0.5em;
+	position: relative;
 }
 
 .icon-github {
-	width: 1.298828125em;
+	// width: 1.298828125em;
 }
 
 .icon-twitter {
-	width: 1.23046875em;
+	// width: 1.23046875em;
 }
 
 .icon-books {

@@ -19,9 +19,7 @@
 
 .icon {
   display: inline-block;
-  font-size: 32px;
-  width: 1em;
-  height: 1em;
+  height: 2.5em;
   fill: #05500c; }
 
 /* =======================================================================================
@@ -32,16 +30,14 @@ Example showing how to change the color/size of the icons:
 }
 ======================================================================================== */
 .icon-speaking {
-  fill: #0d832d; }
+  fill: #0d832d;
+  top: 0.5em;
+  position: relative; }
 
 .icon-projects {
-  fill: #0d832d; }
-
-.icon-github {
-  width: 1.298828125em; }
-
-.icon-twitter {
-  width: 1.23046875em; }
+  fill: #0d832d;
+  top: 0.5em;
+  position: relative; }
 
 * {
   box-sizing: border-box; }
@@ -64,9 +60,9 @@ p {
   background: #868687;
   color: white;
   min-height: 10.4em; }
-  @media (min-width: 35em) {
+  @media (min-width: 64em) {
     .header {
-      padding: 2em 15%; } }
+      padding: 2em 12%; } }
   .header a,
   .header a:hover,
   .header a:visited {
@@ -133,9 +129,9 @@ p {
   padding: 2em 5%;
   background: #0d832d;
   color: #f2f4e4; }
-  @media (min-width: 35em) {
+  @media (min-width: 64em) {
     .recent {
-      padding: 2em 15%; } }
+      padding: 2em 12%; } }
 
 .recentList {
   list-style: none;
@@ -143,7 +139,7 @@ p {
   padding: 0;
   overflow: hidden;
   width: 100%; }
-  @media (min-width: 45em) {
+  @media (min-width: 50em) {
     .recentList {
       display: flex;
       flex-wrap: wrap; } }
@@ -152,7 +148,7 @@ p {
   padding: 3em 0 0 0;
   position: relative;
   text-align: center; }
-  @media (min-width: 45em) {
+  @media (min-width: 50em) {
     .recentList-item {
       display: flex;
       flex-basis: calc(50% - 1em);
@@ -171,22 +167,32 @@ p {
 
 .recentList-item-icon {
   fill: #05500c;
-  display: inline-block;
-  margin-bottom: .3em; }
+  display: inline;
+  margin: 0 1em -0.7em 0; }
 
 .recentList-item-heading {
   font-family: "Prelo Slab W01 Bold";
   margin: 0;
   position: relative;
   padding-bottom: 1em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  display: inline-block; }
   .recentList-item-heading:after {
     content: "";
     border-top: 1px solid #05500c;
-    width: 50%;
+    width: 100%;
+    width: calc(100% + 3em);
     position: absolute;
-    left: 25%;
+    left: -2.7em;
     bottom: 0; }
+    @media (min-width: 45em) {
+      .recentList-item-heading:after {
+        width: 90%;
+        left: 5%; } }
+
+.recentList-item-primaryLink {
+  display: block;
+  position: relative; }
 
 .recentList-item-externalLink {
   font-family: "DroidSans";
@@ -205,9 +211,9 @@ p {
   background: #05500c;
   color: #f2f4e4;
   overflow: hidden; }
-  @media (min-width: 35em) {
+  @media (min-width: 64em) {
     .otherThings {
-      padding: 2em 15%; } }
+      padding: 2em 12%; } }
   @media (min-width: 62em) {
     .otherThings {
       display: flex;
@@ -231,16 +237,22 @@ p {
   font-size: 36px;
   font-size: 2.25rem;
   font-family: "Prelo Slab W01 Bold";
-  line-height: 2; }
+  display: inline-block;
+  margin-left: .3em;
+  margin-bottom: .25em;
+  line-height: 2;
+  position: relative; }
   .otherThings-category:after {
     content: "";
-    border-top: 1px solid #05500c;
+    border-top: 1px solid #fff;
     width: 100%;
+    width: calc(100% + 1.25em);
     position: absolute;
-    left: 0;
-    bottom: 0; }
-  .otherThings-category.projects {
-    margin-bottom: .5em; }
+    left: -1.25em;
+    bottom: -.25em; }
+  .otherThings-category.speaking:after {
+    width: calc(100% + 1em);
+    left: -1em; }
 
 .otherThings-subCategory {
   font-size: 19.2px;

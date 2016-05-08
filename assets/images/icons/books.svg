@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="44px" viewBox="0 0 39 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>books</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="books" fill="#000000">
+            <path d="M35.75,5.5 L35.75,41.25 L6.875,41.25 C4.59525,41.25 2.75,39.402 2.75,37.125 C2.75,34.848 4.59525,33 6.875,33 L33,33 L33,0 L5.5,0 C2.475,0 0,2.475 0,5.5 L0,38.5 C0,41.525 2.475,44 5.5,44 L38.5,44 L38.5,5.5 L35.75,5.5 L35.75,5.5 L35.75,5.5 Z" id="Shape"></path>
+            <path d="M6.87775,35.75 L6.87775,35.75 L6.875,35.75 C6.116,35.75 5.5,36.366 5.5,37.125 C5.5,37.884 6.116,38.5 6.875,38.5 L6.87775,38.5 L6.87775,38.5 L32.99725,38.5 L32.99725,35.75 L6.87775,35.75 L6.87775,35.75 L6.87775,35.75 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

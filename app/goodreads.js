@@ -18,10 +18,10 @@ module.exports = {
         bookData = {
           title: book.title[0],
           link: book.link[0],
+          author: book.authors[0].author[0].name[0],
+          authorLink: book.authors[0].author[0].link[0],
         };
       });
-
-      console.log(bookData);
 
       fs.writeFile('data/books.json', JSON.stringify(bookData), function() {
         console.log('Goodreads data updated.');

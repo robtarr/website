@@ -11,6 +11,8 @@ const ghuser = client.user('robtarr');
 module.exports = {
   get: function() {
     ghuser.events(function(err, data, headers) {
+      if (err) { return }
+
       let latest = _.filter(data, function(item) {
         return item.type == 'PushEvent';
       })[0];
