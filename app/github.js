@@ -4,6 +4,7 @@ const Promise = require('bluebird');
 const github = require('octonode');
 const _ = require('lodash');
 const fs = require('fs');
+const moment = require('moment');
 
 const client = github.client();
 const ghuser = client.user('robtarr');
@@ -17,14 +18,16 @@ module.exports = {
         return item.type == 'PushEvent';
       })[0];
 
-      let jsonString = JSON.stringify({
-        repo: latest.repo.name,
-        date: latest.created_at,
-      });
+      if (latest.repo.name && latest.created_at) {
+        let jsonString = JSON.stringify({
+          repo: latest.repo.name,
+          date: moment(new Date(latest.created_at)).fromNow(),
+        });
 
-      fs.writeFile('data/github.json', jsonString, function() {
-        console.log('GitHub data updated.');
-      });
+        fs.writeFile('data/github.json', jsonString, function() {
+          console.log('GitHub data updated.');
+        });
+      }
     });
   },
 };

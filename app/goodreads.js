@@ -15,17 +15,23 @@ module.exports = {
       parseString(xmlData, function(err, data) {
         let book = data.GoodreadsResponse.reviews[0].review[0].book[0]
 
-        bookData = {
-          title: book.title[0],
-          link: book.link[0],
-          author: book.authors[0].author[0].name[0],
-          authorLink: book.authors[0].author[0].link[0],
-        };
+        try {
+          bookData = {
+            title: book.title[0],
+            link: book.link[0],
+            author: book.authors[0].author[0].name[0],
+            authorLink: book.authors[0].author[0].link[0],
+          };
+        } catch (e) {
+          console.log(`Invalid Goodreads data: ${book}`);
+        }
       });
 
-      fs.writeFile('data/books.json', JSON.stringify(bookData), function() {
-        console.log('Goodreads data updated.');
-      });
+      if (bookData.title && bookData.link && bookData.author && bookData.authorLink) {
+        fs.writeFile('data/books.json', JSON.stringify(bookData), function() {
+          console.log('Goodreads data updated.');
+        });
+      }
     }
 
     request(`https://www.goodreads.com/review/list/55152592.xml?key=${key}&v=2&shelf=currently-reading`, _processAPI);

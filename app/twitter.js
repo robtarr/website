@@ -2,6 +2,7 @@
 
 require('dot-env');
 const Twitter = require('twitter');
+const moment = require('moment');
 const fs = require('fs');
 
 const client = new Twitter({
@@ -17,15 +18,23 @@ module.exports = {
   get: function() {
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
       if (!error) {
-        let jsonString = JSON.stringify({
-          date: tweets[0].created_at,
-          text: tweets[0].text,
-          link: `http://twitter.com/robtarr/status/${tweets[0].id_str}`,
-        });
+        let tweetData;
 
-        fs.writeFile('data/twitter.json', jsonString, function() {
-          console.log('Twitter data updated.');
-        });
+        try {
+          tweetData = {
+            date: moment(new Date(tweets[0].created_at)).fromNow(),
+            text: tweets[0].text,
+            link: `http://twitter.com/robtarr/status/${tweets[0].id_str}`,
+          };
+        } catch (e) {
+          console.log(`Invalid tweet data: ${tweetData}`);
+        }
+
+        if (tweetData.date && tweetData.text && tweetData.link) {
+          fs.writeFile('data/twitter.json', JSON.stringify(tweetData), function() {
+            console.log('Twitter data updated.');
+          });
+        }
       }
     });
   },

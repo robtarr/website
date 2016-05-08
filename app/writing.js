@@ -22,12 +22,14 @@ module.exports = {
         let json = JSON.parse(request.body)[0];
 
         if (json.permalink) {
+          let postDate = moment(Number(json.pub_date) * 1000).format('YYYY-MM-DDTHH:MM:SS');
+
           return {
             name: 'seesparkbox.com',
             siteLink: 'https://seesparkbox.com/foundry/author/rob_tarr',
             title: json.title,
             link: json.permalink,
-            date: moment(Number(json.pub_date) * 1000).format('YYYY-MM-DDTHH:MM:SS'),
+            date: moment(postDate).fromNow(),
           };
         } else {
           return {
@@ -35,17 +37,18 @@ module.exports = {
             siteLink: 'https://blog.robtarr.net',
             title: json.title.rendered,
             link: json.link,
-            date: json.date,
+            date: moment(new Date(json.date)).fromNow(),
           };
         }
       });
     }).then(function(posts) {
       let post = _.sortBy(posts, 'date')[posts.length - 1];
-      let jsonString = JSON.stringify(post);
 
-      fs.writeFile('data/blog.json', jsonString, function() {
-        console.log('Blog data updated.');
-      });
+      if (post.name && post.siteLink && post.title && post.link && post.date) {
+        fs.writeFile('data/blog.json', JSON.stringify(post), function() {
+          console.log('Blog data updated.');
+        });
+      }
     }).catch(function(err) {
       console.log('Error getting blog posts.', err);
     });
