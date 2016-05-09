@@ -28,7 +28,7 @@ module.exports = {
         }
       });
 
-      if (bookData.title && bookData.link && bookData.author && bookData.authorLink) {
+      if (bookData && bookData.title && bookData.link && bookData.author && bookData.authorLink) {
         fs.writeFile('data/books.json', JSON.stringify(bookData), function() {
           console.log('Goodreads data updated.');
         });
