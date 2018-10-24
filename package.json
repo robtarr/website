@@ -46,7 +46,7 @@
     "lodash": "^4.10.0",
     "moment": "^2.11.2",
     "node-schedule": "^0.2.9",
-    "octonode": "^0.7.4",
+    "octonode": "^0.9.3",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "request": "^2.65.0",
